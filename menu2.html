@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>menu.1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+
+<style>
+#footer {   
+    margin: 4em auto 0 auto; /* Margem: top=4em right=auto bottom=0 left=auto */
+    width: 40em; /* Largura */
+    text-align: center; /* Texto alinhado ao centro */
+    font-size: 0.8em; /* Tamanho da fonte */
+        
+}
+body {margin: 0;}
+#header {
+    background-image: url('banner.jpg'); /* Imagem de fundo */ 
+    background-size: cover; /* Para a imagem cobrir o fundo o quanto for possível */
+    background-color: #444444; /* Cor de fundo caso a imagem 'banner.jpg' não carregue */
+    text-align: center; /* Alinhamento do texto ao centro */
+    min-height: 100vh; /* Tamanho mínimo para cobrir a tela inteira na vertical*/
+}
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+</style>
+</head>
+<body>
+
+
+<ul class="topnav">
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">Seviços</a></li>
+  <li><a href="#contact">Contatos</a></li>
+  <li class="right"><a href="#about">site</a></li>
+</ul>
+
+  </nav>
+  <header id="header">          
+  
+    </header>
+    <footer id="footer">
+      <p class="copyright">&copy; Todos os direitos reservados. Design: 
+        <a href="https://jrmodas.facebook.br">.</a>Junior</p>
+    </footer>
+</body>
+</html>

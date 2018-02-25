@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>formulario</title>
+	<meta charset="utf-8">
+	<meta charset="pb-br">
+	<link rel=”stylesheet” type=”text/css” href=”index.css” >
+<style type="text/css">
+	
+	.input{
+   
+    /* Para ver as bordas do formulário */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+
+
+
+</style>
+</head>
+<body>
+	<form id="formcontatos"
+	action="index.php">
+	<!--aqui vão os elementos do formalario-->
+	
+	<div>
+	<fieldset>
+		<legend>formulario basico</legend>
+		<label for="_nome">
+		nome:        
+		<input type="text" id=" name"  required="required"
+		pattern="[a-z\s]+$" placeholder="digite seu  nome" class="input">
+		</label><br><br>
+
+		<label> sobrenome: </label>
+
+		<input type="text" id ="sobrenome" required="required"
+		pattern="[a-z\s]+$" placeholder="digite seu sobrenome" class="input" ></fieldset>	</fieldset>
+	</div>
+	</form>
+	<fieldset>
+		<legend>proximo curso </legend>
+		<input type="radio" name="_curso" id="_curso" value="PHP"/>PHP<br/>
+		<input type="radio" name="_curso" id="_curso" value=""/>JS AVANÇADO<br/>
+		<input type="radio" name="_curso" id="_curso" value=""/>CSS<br/>
+	<fieldset> <legend> Você gostou do curso </legend> 
+		<di>
+			<label for="_curso" style="float: left;">
+			cursos:
+			<select id="_cursos">
+				<option value="sim">sim</option>
+				<option value="nao">nâo</option> 
+			</select>
+		</div>
+	</fieldset>
+	<br>
+	<fieldset>
+		<legend>CURSO REALIZADOS </legend>
+		<input type="checkbox" name="_curso" id="_curso" value="d" />ORIENTAÇAO A OBJETOS <br/>
+		<input type="checkbox" name="_curso" id="_curso" value="d" />HTML <br/>
+		<br>
+	</fieldset>
+	<div>
+		<br>
+		<fieldset><legend>caixa de cometarios </legend>
+    
+    <form name="input" action="html_form_action.asp"
+		method="get">
+		comentario:
+		<input type="text" name="user"  placeholder="comentario">
+		<input type="submit" value="Enviar">
+	</form>
+	</fieldset>
+</body>
+</html>

@@ -1,0 +1,45 @@
+@charset "utf-8";
+/*css Documento*/
+/*fundo*/
+
+#header {
+    background-image: url('banner.jpg'); /* Imagem de fundo */ 
+    background-size: cover; /* Para a imagem cobrir o fundo o quanto for possível */
+    background-color: #444444; /* Cor de fundo caso a imagem 'banner.jpg' não carregue */
+    text-align: center; /* Alinhamento do texto ao centro */
+    min-height: 100vh; /* Tamanho mínimo para cobrir a tela inteira na vertical*/
+}
+body {
+    margin: 0; /* Sem margens */
+    padding: 0;/* Sem espaçamentos */
+    border: 0; /* Sem bordas */
+    background-color: #f1f1f1; /* Cor de fundo */
+    color: #666666; /* Cor de texto */
+    font-family: "Source Sans Pro", sans-serif; /* Fonte do texto títular e fonte reserva */
+    font-size: 150%; /* Tamanho de fonte */
+    font-weight: 200; /* Espessura de texto */
+    line-height: 1.65em; /* Espaçamento de texto */
+}
+/* tag nav dentro do elemento com id="header" */
+#menu  {
+    background-color: #000000; /* Cor de fundo em hexadecimal */
+    width: 100%; /* Largura 100% do tamanho da tela */
+    margin: 0 auto; /* Margem igual a 0 acima e abaixo e automático
+    na horizontal para alinhar o elemento ao centro */ 
+    padding-top: 15px; /* Padding de 15px acima da tag nav */
+    padding-bottom: 15px;  /* Padding de 15px abaixo da tag nav */  
+    z-index: 1000; /* Posição relativa ao eixo Z, para ficar na
+    frente de todos os elementos */
+}
+
+/* tag <a> dentro da tag nav que, por sua vez, está em #header */
+#menu a {
+    margin-right: 25px; /* Margem de 25 pixel a direita de
+    todos os elementos com a tag <a>, contidos em #header */
+    color: #cccccc; /* Cor do texto em hexadecimal */
+    font-weight: 600; /* Espessura do texto */
+}
+
+
+
+
